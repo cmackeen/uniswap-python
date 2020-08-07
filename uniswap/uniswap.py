@@ -121,8 +121,8 @@ _netid_to_name = {1: "mainnet", 4: "rinkeby"}
 class Uniswap:
     def __init__(
         self,
-        address: Union[str, AddressLike],
-        private_key: str,
+        address: Union[str, AddressLike] = None,
+        private_key: str = None,
         provider: str = None,
         web3: Web3 = None,
         version: int = 1,
